@@ -35,10 +35,10 @@ const CartItem = ({ id, img, title, price, amount }) => {
           onClick={() => {
    
             if (amount === 1) {
-              dispatch(decrease({id}))
+          
               return;
             }
-           
+            dispatch(decrease({id}))
           }}
         >
           <ChevronDown />
