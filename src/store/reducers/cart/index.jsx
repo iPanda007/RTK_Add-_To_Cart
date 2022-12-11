@@ -15,7 +15,11 @@ const slice = createSlice({
          clearCart : (state,action)=>{
             
             state.cartItems = [];
-
+            state.amount = 0;
+         
+        },
+        removeItem : (state,{payload})=>{
+               
         }
     }
 })
