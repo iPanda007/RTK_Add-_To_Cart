@@ -21,6 +21,7 @@ const slice = createSlice({
 })
 
 
+export const { clearCart } =  slice.actions
 
 
 
