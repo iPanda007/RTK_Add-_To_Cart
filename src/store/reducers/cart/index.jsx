@@ -40,8 +40,11 @@ const slice = createSlice({
 
                 state.cartItems.forEach((item)=>{
                       amount += item.amount  
+                      total +=  item.amount * item.price
                 })
-                console.log(amount)
+           
+                state.amount = amount
+                state.total = total
         }
       
 
@@ -49,7 +52,7 @@ const slice = createSlice({
 })
 
 
-export const { clearCart,removeItem,decrease,increase } =  slice.actions
+export const { clearCart,removeItem,decrease,increase,calculateTotals } =  slice.actions
 
 
 
