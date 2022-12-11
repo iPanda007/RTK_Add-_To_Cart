@@ -12,8 +12,10 @@ const slice = createSlice({
      name:'cart',
     initialState,
     reducers: {
-        modals : ()=>{
- 
+         clearCart : (state,action)=>{
+            
+            state.cartItems = [];
+
         }
     }
 })
